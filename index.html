@@ -12,6 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="shortcut icon" href="images/Masari-Logo.png" type="image/x-icon">
 	<link rel="stylesheet" href="css/timeline.css" />
 
 
@@ -26,6 +27,11 @@
 	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	<style>
+		#exchanges header.major:after {
+			background: black !important;
+
+		}
+
 		div#stats{display: none!important;}
 		#titleBar{display: none!important;}
 
@@ -75,7 +81,17 @@
 				border-radius: 0 4px 4px 0;
 			}
 		}
+		.card{background-color: #85bb65!important;}
+		.card span{color: white !important; font-weight: 500;}
+		.card .card-reveal p{color:black!important;}
+		section a{
+			cursor: pointer !important;
+		}
 
+		#exchanges{width: 100%;}
+		#exchanges .container{	float: left; width: 50%;}
+		.clear{clear:both}
+		.kapsayici{width: 53%;text-align: center; margin: 0 auto;}
 
 	</style>
 </head>
@@ -84,15 +100,15 @@
 
 	<!-- Header -->
 
-	<header class="baslik" style="text-align: center; padding-top: 1%;position: fixed; z-index: 1000;width: 100%;background: #1a1f27">
+	<header class="baslik" style="text-align: center; padding-top: 1%;position: fixed; z-index: 1000;width: 100%; height: 6%;background: #161b21">
 
 		<ul class="icons">
 			<li><a href="#info" class="icon alt scrolly fa-info " ><span class="labels" data-title="info" > Info</span></a></li>
 			<li><a href="#announcement" class="icon alt scrolly fa-bullhorn " ><span class="labels" data-title="info" > Announcement</span></a></li>
 			<li><a href="#downloads" class="icon alt scrolly fa-cloud-download "><span class="labels"> Downloads</span></a></li>
-			<li><a href="#pools" class="icon alt scrolly fa-product-hunt "><span class="labels"> Pools</span></a></li>
-			<li><a href="#explorers" class="icon alt scrolly fa-paper-plane "><span class="labels"> Block Explorers</span></a></li>
+			<li><a href="#exchanges" class="icon alt scrolly fa-paper-plane "><span class="labels"> Block Explorers</span></a></li>
 			<li><a href="#exchanges" class="icon alt scrolly fa-bitcoin"><span class="labels"> Exchanges</span></a></li>
+			<li><a href="#pools" class="icon alt scrolly fa-product-hunt "><span class="labels"> Pools</span></a></li>
 			<li><a href="#timeline" class="icon alt scrolly  fa-clock-o"><span class="labels"> Timeline</span></a></li>
 		</ul>
 
@@ -160,18 +176,6 @@
 	</section>
 	<section id="announcement" class="wrapper style2 special fade-up" style="background: linear-gradient(to right, #185a9d, #43cea2)!important; text-align: center">
 
-
-		<style>
-
-			.card{background-color: #85bb65!important;}
-			.card span{color: white !important; font-weight: 500;}
-			.card .card-reveal p{color:black!important;}
-			section a{
-				cursor: pointer !important;
-			}
-		</style>
-
-		
 		<div class="row">
 			<div class="col xl2 l3 m4 s12">
 				<div class="card" >
@@ -183,38 +187,11 @@
 
 					</div>
 					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-						<p>Here is some more information about this product that is only revealed once clicked on.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col xl2 l3 m4 s12">
-				<div class="card" >
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-57304.jpg">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4" >Card Title<i class="material-icons right">more_vert</i></span>
-
-					</div>
-					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-						<p>Here is some more information about this product that is only revealed once clicked on.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col xl2 l3 m4 s12">
-				<div class="card" >
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-57304.jpg">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4" >Card Title<i class="material-icons right">more_vert</i></span>
-
-					</div>
-					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-						<p>Here is some more information about this product that is only revealed once clicked on.</p>
+						<span class="card-title grey-text text-darken-4" style="font-weight: bold;">Card Title<i class="material-icons right">close</i></span>
+						<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 					</div>
 				</div>
 			</div>
@@ -226,7 +203,7 @@
 
 
 	<!-- Downloads -->
-	<section id="downloads" class="wrapper style2 special fade-up">
+	<section id="downloads" class="wrapper style1 special fade-up">
 		<div class="container">
 			<header class="major">
 				<h2>Downloads</h2>
@@ -261,6 +238,41 @@
 		</div>
 	</section>
 
+	<section id="exchanges" class="wrapper style2 special fade-up" >
+		<div class="kapsayici">
+			<div class="container">
+				<header class="major">
+					<h3>Block Explorers</h3>
+				</header>
+				<div class="box alt">
+					<div class="row uniform">
+						<section class="12u 6u$(medium) 12u$(xsmall)">
+							<a href="https://msrchain.net" class="icon alt major fa-paper-plane"></a>
+							<h6><a href="https://msrchain.net">msrchain.net</a></h6>
+						</section>
+
+					</div>
+				</div>
+			</div>
+			<div class="container" >
+				<header class="major">
+					<h3>Exchanges</h3>
+				</header><div class="box alt">
+				<div class="row uniform">
+					<section class="12u 6u$(medium) 12u$(xsmall)">
+						<a href="https://www.southxchange.com/" class="icon alt major fa-bitcoin"></a>
+						<h6><a href="https://www.southxchange.com/">SouthXchange</a></h6>
+					</section>
+				</div>
+			</div>
+			</div>
+			<br/>
+			<br/>
+			<br/>
+
+		</div>
+		<div class="clear" ></div>
+	</section>
 	<!-- Pools -->
 	<section id="pools" class="wrapper style1 special fade-up">
 		<div class="container">
@@ -272,12 +284,12 @@
 
 				<div class="row uniform">
 					<section class="6u 6u$(medium) 12u$(xsmall)">
-						<a href="https://masari.superpools.net" class="icon alt major fa-info"></a>
+						<a href="https://masari.superpools.net" class="icon alt major fa-area-chart"></a>
 						<h6><a href="https://masari.superpools.net">masari.superpools.net</a></h6>
 
 					</section>
 					<section class="6u 6u(medium) 12u$(xsmall)">
-						<a href="http://masaripool.com" class="icon alt major fa-info"></a>
+						<a href="http://masaripool.com" class="icon alt major fa-bar-chart-o"></a>
 						<h6><a href="http://masaripool.com">masaripool.com</a></h6>
 
 					</section>
@@ -288,63 +300,12 @@
 			<br/>
 			<br/>
 			<footer>
-			    <a href="#explorers" class="goto-next scrolly">Next</a>
-			</footer>
-		</div>
-	</section>
-
-	<!-- Block Explorers -->
-	<section id="explorers" class="wrapper style2 special fade-up ">
-		<div class="container">
-
-			<header class="major">
-				<h3>Block Explorers</h3>
-			</header>
-			<div class="box alt">
-				<div class="row uniform">
-					<section class="12u 6u$(medium) 12u$(xsmall)">
-						<a href="https://msrchain.net" class="icon alt major fa-paper-plane"></a>
-						<h5><a href="https://msrchain.net">msrchain.net</a></h5>
-					</section>
-
-				</div>
-			</div>
-			<br/>
-			<br/>
-			<br/>
-			<footer>
-			    <a href="#exchanges" class="goto-next scrolly">Next</a>
-			</footer>
-		</div>
-	</section>
-
-	<!-- Exchanges -->
-	<section id="exchanges" class="wrapper style1 special fade-up">
-		<div class="container">
-
-			<header class="major">
-				<h3>Exchanges</h3>
-			</header>
-			<div class="box alt">
-				<div class="row uniform">
-					<section class="12u 6u$(medium) 12u$(xsmall)">
-						<a href="https://www.southxchange.com/" class="icon alt major fa-bitcoin"></a>
-						<h6><a href="https://www.southxchange.com/">SouthXchange</a></h6>
-					</section>
-
-				</div>
-			</div>
-
-			<br/>
-			<br/>
-			<br/>
-			<footer>
 			    <a href="#timeline" class="goto-next scrolly">Next</a>
 			</footer>
 		</div>
 	</section>
 
-	<!-- Five -->
+	<!-- Timeline -->
 	<section id="timeline" class="wrapper style2 special fade">
 
 		<header class="major">
