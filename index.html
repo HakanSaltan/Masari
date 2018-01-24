@@ -27,6 +27,9 @@
 	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	<style>
+
+		a.colored {border-bottom: 1px solid green;}
+
 		.baslik{text-align: center; padding-top: 1%;position: fixed; z-index: 1000;height: 7%;width: 100%;background: #161b21}
 
 		@media screen and (max-width: 1724px){
@@ -135,12 +138,11 @@
 
 		<ul class="icons">
 			<li><a href="#info" class="icon alt scrolly fa-info " ><span class="labels" data-title="info" > Info</span></a></li>
-			<li><a href="#announcement" class="icon alt scrolly fa-bullhorn " ><span class="labels" data-title="info" > Announcement</span></a></li>
+			<li><a href="#roadmap" class="icon alt scrolly  fa-clock-o"><span class="labels"> Roadmap</span></a></li>
+			<!-- <li><a href="#announcement" class="icon alt scrolly fa-bullhorn " ><span class="labels" data-title="info" > Announcement</span></a></li> -->
 			<li><a href="#downloads" class="icon alt scrolly fa-cloud-download "><span class="labels"> Downloads</span></a></li>
-			<li><a href="#exchanges" class="icon alt scrolly fa-paper-plane "><span class="labels"> Block Explorers</span></a></li>
-			<li><a href="#exchanges" class="icon alt scrolly fa-bitcoin"><span class="labels"> Exchanges</span></a></li>
-			<li><a href="#pools" class="icon alt scrolly fa-product-hunt "><span class="labels"> Pools</span></a></li>
-			<li><a href="#timeline" class="icon alt scrolly  fa-clock-o"><span class="labels"> Timeline</span></a></li>
+			<li><a href="#faq" class="icon alt scrolly fa-question "><span class="labels"> FAQ</span></a></li>
+			<li><a style="border: 1px;" href="https://msrchain.net" class="icon alt scrolly fa-paper-plane "><span class="labels"> Block Explorer</span></a></li>
 		</ul>
 
 	</header>
@@ -149,7 +151,7 @@
 
 	<section id="banner">
 	    <div class="content" id="particles-js" style="width: 100%;    padding: 0px !important;">
-		<div class="align-center maslogo" style="  width: 100%;padding-top:9%;position: absolute;z-index: 100000;">
+		<div class="align-center maslogo" style="height: 0%;  width: 100%;padding-top:9%;position: absolute;">
 		    <span class="image" style="    margin-left: 0px!important;"><img src="images/Masari-Logo.png" alt="" /></span><br>
 		    <header>
 			<br/>
@@ -158,16 +160,19 @@
 			    <li><a href="http://twitter.com/masaricurrency" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
 			    <li><a href="https://reddit.com/r/masari" class="icon alt fa-reddit-alien"><span class="label">Reddit</span></a></li>
 			    <li><a href="https://github.com/masari-project/masari" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+			    <li><a href="https://discord.gg/sMCwMqs" class="icon alt fa-gamepad"><span class="label">Discord</span></a></li>
 			</ul>
 			<h2 style="text-align: center">Masari</h2>
-			<p>Masari is an untraceable, secure, and fungible cryptocurrency using the RingCT protocol</p>
+			<p style="padding-top: 32px; padding-bottom: 16px">
+			    <a style="border: 1px; padding-right: 16px" href="https://www.southxchange.com/Market/Book/MSR/BTC" target="_blank"><img src="images/southxchange_logo.png" height="32"></a>
+			    <a style="border: 1px; padding-right: 16px" href="https://stocks.exchange/trade/MSR/BTC" target="_blank"><img src="images/stocks_exchange_logo.png" height="32"></a>
+			</p>
+			<p>
+		        </p>
 		    </header>
 
 		</div>
 	    </div>
-		<footer>
-	    <a href="#info" class="goto-next scrolly">Next</a>
-		</footer>
 	</section>
 
 	<!-- Info -->
@@ -178,7 +183,7 @@
 				<div class="12u 12u$(medium)" style="text-align: center">
 					<br/>
 					<header>
-						<h3>Masari (MSR) is a privacy-focused cryptocurrency based on Monero.</h3>
+						<h3>Masari (MSR) is a scalability-focused, untraceable, secure, and fungible cryptocurrency using the RingCT protocol.</h3>
 					</header>
 				</div>
 
@@ -197,150 +202,15 @@
 						All of the privacy features in Masari resolve into true fungibility, which makes its digital currency equivalent to cash or gold, where no transaction can be discriminated against another.
 					</p>
 				</div>
-
 			</div>
-			<br/>
-			<br/>
-			<br/>
-
-		</div>
-	</section>
-	<section id="announcement" class="wrapper style2 special fade-up" style="background: linear-gradient(to right, #185a9d, #43cea2)!important; text-align: center">
-
-		<div class="row">
-			<div class="col xl2 l3 m4 s12">
-				<div class="card" >
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-57304.jpg">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4" >Card Title<i class="material-icons right">more_vert</i></span>
-
-					</div>
-					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4" style="font-weight: bold;">Card Title<i class="material-icons right">close</i></span>
-						<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-					</div>
-				</div>
-			</div>
-
-		</div>
-
-
-	</section>
-
-
-	<!-- Downloads -->
-	<section id="downloads" class="wrapper style1 special fade-up">
-		<div class="container">
-			<header class="major">
-				<h2>Downloads</h2>
-			</header>
-
-			<div class="box alt">
-				<div class="row uniform">
-					<section class="4u 6u(medium) 12u$(xsmall)">
-						<a href="https://github.com/masari-project/masari/releases/download/v0.1.2.0/masari-linux-x64-v0.1.2.0.tar.gz" class="icon alt major fa-linux"></a>
-						<h3>Linux</h3>
-						<h6><a href="https://github.com/masari-project/masari/releases/download/v0.1.2.0/masari-linux-x64-v0.1.2.0.tar.gz">masari-linux-x64-v0.1.2.0.tar.gz</a></h6>
-					</section>
-					<section class="4u 6u$(medium) 12u$(xsmall)">
-						<a href="https://github.com/masari-project/masari/releases/download/v0.1.2.0/masari-mac-x64-v0.1.2.0.tar.gz" class="icon alt major fa-apple"></a>
-						<h3>MacOS</h3>
-						<h6><a href="https://github.com/masari-project/masari/releases/download/v0.1.2.0/masari-mac-x64-v0.1.2.0.tar.gz">masari-mac-x64-v0.1.2.0.tar.gz</a></h6>
-					</section>
-					<section class="4u$ 6u(medium) 12u$(xsmall)">
-						<a href="https://github.com/masari-project/masari/releases/download/v0.1.2.0/masari-win-x64-v0.1.2.0.zip" class="icon alt major fa-windows"></a>
-						<h3>Windows</h3>
-						<h6><a href="https://github.com/masari-project/masari/releases/download/v0.1.2.0/masari-win-x64-v0.1.2.0.zip">masari-win-x64-v0.1.2.0.zip</a></h6>
-					</section>
-				</div>
-			</div>
-			<br/>
-			<br/>
-			<br/>
-
-			<footer>
-			    <a href="#pools" class="goto-next scrolly">Next</a>
-			</footer>
 		</div>
 	</section>
 
-	<section id="exchanges" class="wrapper style2 special fade-up" >
-		<div class="kapsayici">
-			<div class="container">
-				<header class="major">
-					<h3>Block Explorers</h3>
-				</header>
-				<div class="box alt">
-					<div class="row uniform">
-						<section class="12u 6u$(medium) 12u$(xsmall)">
-							<a href="https://msrchain.net" class="icon alt major fa-paper-plane"></a>
-							<h6><a href="https://msrchain.net">msrchain.net</a></h6>
-						</section>
-
-					</div>
-				</div>
-			</div>
-			<div class="container" >
-				<header class="major">
-					<h3>Exchanges</h3>
-				</header><div class="box alt">
-				<div class="row uniform">
-					<section class="12u 6u$(medium) 12u$(xsmall)">
-						<a href="https://www.southxchange.com/" class="icon alt major fa-bitcoin"></a>
-						<h6><a href="https://www.southxchange.com/">SouthXchange</a></h6>
-					</section>
-				</div>
-			</div>
-			</div>
-			<br/>
-			<br/>
-			<br/>
-
-		</div>
-		<div class="clear" ></div>
-	</section>
-	<!-- Pools -->
-	<section id="pools" class="wrapper style1 special fade-up">
-		<div class="container">
-
-			<header class="major">
-				<h3>Pools</h3>
-			</header>
-			<div class="box alt">
-
-				<div class="row uniform">
-					<section class="6u 6u$(medium) 12u$(xsmall)">
-						<a href="https://masari.superpools.net" class="icon alt major fa-area-chart"></a>
-						<h6><a href="https://masari.superpools.net">masari.superpools.net</a></h6>
-
-					</section>
-					<section class="6u 6u(medium) 12u$(xsmall)">
-						<a href="http://masaripool.com" class="icon alt major fa-bar-chart-o"></a>
-						<h6><a href="http://masaripool.com">masaripool.com</a></h6>
-
-					</section>
-
-				</div>
-			</div>
-			<br/>
-			<br/>
-			<br/>
-			<footer>
-			    <a href="#timeline" class="goto-next scrolly">Next</a>
-			</footer>
-		</div>
-	</section>
-
-	<!-- Timeline -->
-	<section id="timeline" class="wrapper style2 special fade">
+	<!-- Roadmap -->
+	<section id="roadmap" class="wrapper style1 special fade">
 
 		<header class="major">
-			<h3>Timeline</h3>
+			<h3>Roadmap</h3>
 		</header>
 
 		<ul class="timeline">
@@ -392,6 +262,95 @@
 
 	</section>
 
+<!--
+	<section id="announcement" class="wrapper style2 special fade-up" style="background: linear-gradient(to right, #185a9d, #43cea2)!important; text-align: center">
+
+		<div class="row">
+			<div class="col xl2 l3 m4 s12">
+				<div class="card" >
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator" src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-57304.jpg">
+					</div>
+					<div class="card-content">
+						<span class="card-title activator grey-text text-darken-4" >Card Title<i class="material-icons right">more_vert</i></span>
+
+					</div>
+					<div class="card-reveal">
+						<span class="card-title grey-text text-darken-4" style="font-weight: bold;">Card Title<i class="material-icons right">close</i></span>
+						<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+	</section>
+-->
+
+
+	<!-- Downloads -->
+	<section id="downloads" class="wrapper style1 special fade-up">
+		<div class="container">
+			<header class="major">
+				<h2>Downloads</h2>
+			</header>
+
+			<div class="box alt">
+				<div class="row uniform">
+					<section class="4u 6u(medium) 12u$(xsmall)">
+						<a href="https://github.com/masari-project/masari/releases/download/v0.1.4.0/masari-linux-x64-v0.1.4.0.tar.gz" class="icon alt major fa-linux"></a>
+						<h5>Linux</h5>
+						<h6>GUI wallet coming soon!</h6>
+						<h6><a class="colored" href="https://github.com/masari-project/masari/releases/download/v0.1.4.0/masari-linux-x64-v0.1.4.0.tar.gz">CLI wallet v0.1.4.0</a></h6>
+					</section>
+					<section class="4u 6u$(medium) 12u$(xsmall)">
+						<a href="https://github.com/masari-project/masari/releases/download/v0.1.4.0/masari-mac-x64-v0.1.4.0.tar.gz" class="icon alt major fa-apple"></a>
+						<h5>MacOS</h5>
+						<h6><a class="colored" href="https://github.com/masari-project/masari-wallet-gui/releases/download/v0.1.4.0/masari-gui-mac-x64-v0.1.4.0.tar.gz">GUI wallet v0.1.4.0</a></h6>
+						<h6><a class="colored" href="https://github.com/masari-project/masari/releases/download/v0.1.4.0/masari-mac-x64-v0.1.4.0.tar.gz">CLI wallet v0.1.4.0</a></h6>
+					</section>
+					<section class="4u$ 6u(medium) 12u$(xsmall)">
+						<a href="https://github.com/masari-project/masari/releases/download/v0.1.4.0/masari-win-x64-v0.1.4.0.zip" class="icon alt major fa-windows"></a>
+						<h5>Windows</h5>
+						<h6><a class="colored" href="https://github.com/masari-project/masari-wallet-gui/releases/download/v0.1.4.0/masari-gui-win-x64-v0.1.4.0.zip">GUI wallet v0.1.4.0</a></h6>
+						<h6><a class="colored" href="https://github.com/masari-project/masari/releases/download/v0.1.4.0/masari-win-x64-v0.1.4.0.zip">CLI wallet v0.1.4.0</a></h6>
+					</section>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="faq" class="wrapper style1 special fade-up">
+		<div class="container">
+
+			<header class="major">
+				<h3>FAQ</h3>
+			</header>
+			<div class="box alt" align="left">
+			    <p>
+				<h5>What pools are out there?</h5>
+				<h6>The most popular ones are <a class="colored" href="https://masari.superpools.net">masari.superpools.net</a> and <a class="colored" href="http://masaripool.com">masaripool.com</a>, and if you're looking for alternatives many can be found in our <a class="colored" href="https://bitcointalk.org/index.php?topic=2159114">Bitcointalk</a> page or <a class="colored" href="https://discord.gg/sMCwMqs">Discord</a> channel
+				</h6>
+			    </p>
+			    <p>
+				<h5>Is there a pre-mine?</h5>
+				<h6>No pre-mine or ICO was conducted in this project!</h6>
+			    </p>
+			    <p>
+				<h5>What's the max supply?</h5>
+				<h6>There will be around 18.5 million coins issued over 10 years before "tail emission" occurs, which is a small sub-1% annual inflation of 0.3 MSR per minute that would keep miners incentivized and replaces liquidity for lost coins.</h6>
+			    </p>
+			    <p>
+				<h5>Where's your whitepaper?</h5>
+				<h6>There will be a whitepaper drafted when a new scalability feature will be proposed. As this is a Monero fork, its basis are the <a class="colored" href="https://cryptonote.org/whitepaper.pdf">CryptoNote</a> and <a class="colored" href="https://lab.getmonero.org/pubs/MRL-0005.pdf">RingCT</a> protocols that are well researched and cryptographically sound.
+			    </p>
+		</div>
+	</section>
+
 	<!-- Footer -->
 	<footer id="footer">
 		<ul class="icons">
@@ -399,6 +358,7 @@
 			<li><a href="http://twitter.com/masaricurrency" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
 			<li><a href="https://reddit.com/r/masari" class="icon alt fa-reddit-alien"><span class="label">Reddit</span></a></li>
 			<li><a href="https://github.com/masari-project/masari" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+			<li><a href="https://discord.gg/sMCwMqs" class="icon alt fa-gamepad"><span class="label">Discord</span></a></li>
 		</ul>
 		<ul class="copyright">
 			<li>&copy; Copyright 2017</li><li> <a href="http://www.getmasari.org/">Masari</a></li>
